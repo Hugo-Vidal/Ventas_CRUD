@@ -1,0 +1,29 @@
+<h1 class="mb-5 container"> ¡El registro fue almacenado con éxito!</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2>Título de Venta</h2>
+      <li>Cod</li>
+      <li>Detail</li>
+      <li>Category</li>
+      <li>Value</li>
+      <li>Discount</li>
+      <li>Tax</li>
+      <li>Total</li>
+    </div>
+
+    <div class="col-sm">
+      <h2>Detalle de Venta</h2>
+          <li><%= @sale.cod %> </li>
+          <li><%= @sale.detail %> </li>
+          <li><%= @sale.category %> </li>
+          <li><%= @sale.value %> </li>
+          <li><%= @sale.discount %> </li>
+          <li><%= @sale.tax %> </li>
+          <li><%= @sale.total %> </li>
+    </div>
+  </div>
+</div>
+
+<div> <%= link_to "Volver", sales_new_path, class:"btn btn-primary mt-5 ml-5"%> </div>

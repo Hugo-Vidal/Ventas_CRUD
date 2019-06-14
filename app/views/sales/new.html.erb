@@ -1,0 +1,18 @@
+<%= form_with model: Sale.new, local: true do |f| %>
+    <%= label_tag :cod, "Código:" %>
+    <%= f.text_field :cod %>
+    <%= label_tag :detail, "Detalle:" %>
+    <%= f.text_area :detail%>
+    <%= label_tag :category, "Categoria:"  %>
+    <%= f.text_field :category %>
+    <%= label_tag :value, "Valor:"  %>
+    <%= f.text_field :value %>
+    <%= label_tag :discount, "Descuento:"  %>
+    <%= f.text_field :discount %>
+    <%= label_tag :tax, "Exento de IVA" %>
+    <%= f.check_box :tax, "1".to_i, "2".to_i %>
+
+    <%= f.submit "Enviar" %>
+
+<% end %>
+
