@@ -9,8 +9,9 @@
     <%= f.text_field :value %>
     <%= label_tag :discount, "Descuento:"  %>
     <%= f.text_field :discount %>
+
     <%= label_tag :tax, "Exento de IVA" %>
-    <%= f.check_box :tax, "1".to_i, "2".to_i %>
+    <%= f.check_box :tax, 1%>
 
     <%= f.submit "Enviar" %>
 
