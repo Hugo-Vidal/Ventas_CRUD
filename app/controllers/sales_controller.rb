@@ -11,10 +11,11 @@ class SalesController < ApplicationController
     if @sale.tax == 0
       @sale.tax = 0
     else
-      @sale.total = @sale.total* 0.81
+      @sale.total = @sale.total* 1.19
       @sale.tax = 19
     end
     @sale.save
+    #raise @sale.errors.inspect
     redirect_to done_path(@sale)
   end 
    
